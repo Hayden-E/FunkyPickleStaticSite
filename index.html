@@ -6,21 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FunkyPickleWASMSite</title>
     <base href="/FunkyPickleStaticSite/" />
-    <link href="_framework/dotnet.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-I9th1OmQ5lay23SyuPAY4ujIM7QKukhZmQzZVvgcNlk=" />
+    <link rel="preload" id="webassembly" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="icon" type="image/x-icon" href="favicon.png" />
     <link href="FunkyPickleWASMSite.styles.css" rel="stylesheet" />
     <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
-    <script type="importmap">{
-  "imports": {
-    "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.958z1vx7fr.js"
-  },
-  "scopes": {},
-  "integrity": {
-    "./_framework/blazor.webassembly.958z1vx7fr.js": "sha256-A59Tr9HqEhHMu8kU7kruLI9ayw5MRS6Lvc6z7jCbghk=",
-    "./_framework/blazor.webassembly.js": "sha256-A59Tr9HqEhHMu8kU7kruLI9ayw5MRS6Lvc6z7jCbghk="
-  }
-}</script>
+    <script type="importmap"></script>
 </head>
 
 <body>
@@ -41,7 +32,7 @@
     </div>
     <!--<script src="_framework/blazor.webassembly.js"></script>-->
     <!--<script src="_framework/blazor.webassembly.js"></script>-->
-    <script src="_framework/blazor.webassembly.958z1vx7fr.js"></script>
+    <!--<script src="_framework/blazor.webassembly#[.{fingerprint}].js"></script>-->
 </body>
 
 </html>
