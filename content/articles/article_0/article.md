@@ -1,14 +1,28 @@
 # Traffic Trouble Update 1.0.24
 *July 2, 2026*
 
-Welcome back! This update focuses on improving gameplay feel, polishing the user experience, and addressing some of the most common community feedback. Thank you to everyone who has been playing and sharing suggestions!
+Hey everyone! This is our first check in to report our intial progress on the development of our upcoming party game, Traffic Trouble. In this update we'll give you
+a look into the design of this new game.
 
 ---
 
-## 🚦 New Features
+## Character
 
-### Dynamic Traffic Events
-Traffic patterns are now more varied throughout each match.
+### Character Redesign
+Firstly, you might notice a familiar face throughout this article. 
+
+<img src = "content/articles/article_0/character.JPG">
+
+Everyone's favorite bean character is back with an all new style. In between the original Traffic Trouble prototype from a few years ago
+and now, he somehow found a way to sprout some limbs including two stubby feet and some short arms.
+
+<br/>
+
+Along with this new look, I had to completely reanimate the bean to accomodate for his new topology.
+The bean now features over 16 different animations that smoothly transition between one another to simulate
+a more realistic walking effect. Here's an example of it working.
+
+<img src = "content/articles/article_0/character-animations.gif">
 
 - Random traffic surges
 - Temporary road closures
@@ -31,6 +45,7 @@ Unlock them by completing in-game challenges.
 
 <img src = "content/articles/article_0/thumb.jpg"/>
 
+<img src = "images/Player_Walk_Example.gif">
 
 ## 🎮 Gameplay Changes
 

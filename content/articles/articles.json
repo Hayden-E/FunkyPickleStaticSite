@@ -2,34 +2,7 @@
   {
     "title": "Traffic Trouble Update",
     "filename": "article_0",
-    "titleslug": "traffic-trouble-update_1",
-    "shortbody": "This is a short description to entice the user to click",
-    "tags": [ "Tag1", "Tag2", "Tag3" ],
-    "publishdate": "2026-07-02",
-    "category": "Update"
-  },
-  {
-    "title": "Traffic Trouble Update",
-    "filename": "article_0",
-    "titleslug": "traffic-trouble-update_1",
-    "shortbody": "This is a short description to entice the user to click",
-    "tags": [ "Tag1", "Tag2", "Tag3" ],
-    "publishdate": "2026-07-02",
-    "category": "Update"
-  },
-  {
-    "title": "Traffic Trouble Update",
-    "filename": "article_0",
-    "titleslug": "traffic-trouble-update_1",
-    "shortbody": "This is a short description to entice the user to click",
-    "tags": [ "Tag1", "Tag2", "Tag3" ],
-    "publishdate": "2026-07-02",
-    "category": "Update"
-  },
-  {
-    "title": "Traffic Trouble Update",
-    "filename": "article_0",
-    "titleslug": "traffic-trouble-update_1",
+    "titleslug": "releasenotes-traffic-trouble-1.0.23",
     "shortbody": "This is a short description to entice the user to click",
     "tags": [ "Tag1", "Tag2", "Tag3" ],
     "publishdate": "2026-07-02",

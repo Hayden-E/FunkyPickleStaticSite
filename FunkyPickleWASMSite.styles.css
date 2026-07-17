@@ -54,6 +54,16 @@
         text-overflow: ellipsis;
     }
 
+    .file-info a[b-7rerg5oga4] 
+    {
+        color: #b0d1cf;
+        text-decoration: underline;
+    }
+
+        .file-info a:hover[b-7rerg5oga4] {
+            color: #c2e9e7;
+        }
+
 .meta[b-7rerg5oga4] {
     margin: 0;
     color: #C7D0C2;
@@ -153,7 +163,7 @@
         position: absolute;
         inset: 0;
         pointer-events: none;
-        background: linear-gradient( to bottom, rgba(26, 34, 26, 0) 70%, rgba(26, 34, 26, 0.4) 85%, rgba(26, 34, 26, 1) 100% );
+        background: linear-gradient( to bottom, rgba(26, 34, 26, 0) 70%, rgba(26, 34, 26, 0.4) 85%, #243224 100% );
     }
 
 @keyframes scroll-sideways-b-368nyyvlqc {
@@ -167,7 +177,6 @@
 }
 /* /Components/Layout/Footer.razor.rz.scp.css */
 .footer[b-4witc20x7g] {
-    margin-top: 6rem;
     background: linear-gradient(180deg, #182018, #0F1510);
     border-top: 1px solid rgba(119,171,96,.2);
     color: #F4F6F2;
@@ -280,12 +289,11 @@
 }
 
 .nav-container[b-bfy8lmo37o] {
-    max-width: 1500px;
-    margin: 0 auto;
     height: 82px;
-    padding: 0 2rem;
+
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo[b-bfy8lmo37o] {
@@ -295,6 +303,7 @@
     display: block;
     transition: .3s;
     justify-self: start;
+    margin: 0 1rem;
 }
 
     .logo:hover[b-bfy8lmo37o] {
@@ -388,7 +397,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 12px;
     mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
@@ -1345,6 +1353,15 @@ main[b-rage5xxcat] {
     .download-btn-secondary:hover[b-kapwrsnkmc] {
         background: #77AB60;
     }
+
+.alert[b-kapwrsnkmc] {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+}
 /* /Components/Pages/Games.razor.rz.scp.css */
 body[b-ygjp0udg9w] {
     background: #1A221A;
@@ -1797,7 +1814,7 @@ body[b-ygjp0udg9w] {
 
     .about h2[b-pkws05qyn3] {
         color: #a4a4a4;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     .about p[b-pkws05qyn3] {
@@ -1902,8 +1919,10 @@ body[b-pkws05qyn3] {
 
 .news-grid[b-hykvrqj8wd] {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+    justify-items: start;
+    align-items: start;
 }
 
 /* ---------- CARD ---------- */
@@ -2088,7 +2107,7 @@ body[b-sk1c75zn0f] {
     width: 80vh;
     object-fit: cover;
     object-position: center;
-    margin: auto auto 1.5rem;
+    margin: 1.5rem auto 1.5rem;
     display: flex;
     border-radius: 22px;
     box-shadow: 0 25px 60px rgba(0,0,0,.5);
