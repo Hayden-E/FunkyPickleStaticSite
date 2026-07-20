@@ -1,9 +1,0 @@
-[
-  {
-    "name": "v1.0.23",
-    "filename": "1.0.23.zip",
-    "size": "42.8 MB",
-    "datecreated": "2026-07-02",
-    "releasenotesslug": "releasenotes-traffic-trouble-1.0.23"
-  }
-]
