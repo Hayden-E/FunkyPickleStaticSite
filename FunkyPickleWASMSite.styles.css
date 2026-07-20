@@ -1,6 +1,7 @@
 /* /Components/GameComponents/DownloadableComponent.razor.rz.scp.css */
 .download-card[b-7rerg5oga4] {
     background: #354435;
+    max-width: 400px;
     border-radius: 20px;
     padding: 1.5rem 2rem;
     display: flex;
@@ -23,6 +24,7 @@
     gap: 1rem;
     flex: 1;
     min-width: 0; /* prevents overflow */
+    max-width: 207px;
 }
 
 .file-icon[b-7rerg5oga4] {
@@ -135,7 +137,6 @@
 .scroller-container[b-368nyyvlqc] {
     max-width: 100%;
     overflow: hidden;
-    padding: 10px 0;
     display: flex;
 }
 
@@ -1282,23 +1283,6 @@ main[b-rage5xxcat] {
     gap: 1.5rem;
 }
 
-/* If your DownloadableComponent doesn't already have styling,
-   this will still give it structure if you wrap it later */
-.download-card[b-kapwrsnkmc] {
-    background: #1A221A;
-    border-radius: 16px;
-    padding: 1.5rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .35);
-    transition: all .25s ease;
-    border: 1px solid rgba(119, 171, 96, 0.15);
-}
-
-    .download-card:hover[b-kapwrsnkmc] {
-        transform: translateY(-6px);
-        box-shadow: 0 18px 40px rgba(119, 171, 96, .25);
-        border-color: rgba(119, 171, 96, 0.4);
-    }
-
 /* Optional metadata styling (if inside component) */
 .download-meta[b-kapwrsnkmc] {
     display: flex;
@@ -1463,7 +1447,6 @@ body[b-ygjp0udg9w] {
     padding: 8rem 3rem;
     display: grid;
     grid-template-columns: 1fr 1.4fr;
-    align-items: center;
     gap: 5rem;
     position: relative;
     border-radius: 20px;
@@ -1508,12 +1491,15 @@ body[b-ygjp0udg9w] {
 }
 
     .showcase-image img[b-ygjp0udg9w] {
-        width: 65vh;
-        height: 40vh;
+        /*max-width: 650px;*/
+        /*width: 65%;*/
+        width: clamp(300px, 100%, 650px);
+        height: clamp(200px, 100%, 400px);
+        /*max-height: 400px;*/
+        overflow: hidden;
         object-fit: cover;
         object-position: center;
-        margin: auto auto 1.5rem;
-        display: flex;
+        /*margin: auto auto 1.5rem;*/
         border-radius: 22px;
         box-shadow: 0 25px 60px rgba(0,0,0,.5);
         transition: .4s;
@@ -1594,6 +1580,12 @@ body[b-ygjp0udg9w] {
     .game-number[b-ygjp0udg9w] {
         font-size: 6rem;
     }
+}
+
+.alert[b-ygjp0udg9w] {
+    display: flex;
+    justify-self: center;
+    align-self: center;
 }
 /* /Components/Pages/home.razor.rz.scp.css */
 .hero[b-pkws05qyn3] {
@@ -1679,6 +1671,11 @@ body[b-ygjp0udg9w] {
     color: white;
 }
 
+.btn-primary a[b-pkws05qyn3] {
+
+    color: white;
+}
+
 .a[b-pkws05qyn3] {
     background: #77AB60;
     color: white;
@@ -1718,6 +1715,8 @@ body[b-ygjp0udg9w] {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
+    align-content: center;
+    justify-content: center;
 }
 
 .game-card[b-pkws05qyn3] {
@@ -1726,6 +1725,9 @@ body[b-ygjp0udg9w] {
     overflow: hidden;
     transition: all .3s ease;
     box-shadow: 0 10px 25px rgba(0, 0, 0, .35);
+    justify-self: center;
+    align-self: start;
+    max-width: 400px;
 }
 
     .game-card:hover[b-pkws05qyn3] {
@@ -1839,6 +1841,14 @@ body[b-pkws05qyn3] {
 .btn:hover[b-pkws05qyn3] {
     text-decoration: none;
 }
+
+.banner[b-pkws05qyn3] {
+
+}
+
+    .banner [b-pkws05qyn3]::after {
+        background: linear-gradient( to bottom, rgba(26, 34, 26, 0) 70%, rgba(26, 34, 26, 0.4) 85%, #243224 100% );
+    }
 /* /Components/Pages/News.razor.rz.scp.css */
 .news-page[b-hykvrqj8wd] {
     background: #0F1510;
@@ -1935,6 +1945,7 @@ body[b-pkws05qyn3] {
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,.35);
     transition: all .3s ease;
+    width: clamp(100px, 100%, 400px);
 }
 
     .news-card:hover[b-hykvrqj8wd] {
@@ -2104,7 +2115,7 @@ body[b-sk1c75zn0f] {
 }
 
 [b-sk1c75zn0f] .article-body img {
-    width: 80vh;
+    width: clamp(200px, 100%, 800px);
     object-fit: cover;
     object-position: center;
     margin: 1.5rem auto 1.5rem;

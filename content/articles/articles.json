@@ -1,11 +1,11 @@
 [
   {
-    "title": "Traffic Trouble Update",
+    "title": "Announcing Traffic Trouble",
     "filename": "article_0",
-    "titleslug": "releasenotes-traffic-trouble-1.0.23",
-    "shortbody": "This is a short description to entice the user to click",
-    "tags": [ "Tag1", "Tag2", "Tag3" ],
-    "publishdate": "2026-07-02",
-    "category": "Update"
+    "titleslug": "announcing-traffic-trouble",
+    "shortbody": "Announcing our first game!",
+    "tags": [ "Traffic Trouble" ],
+    "publishdate": "2026-07-20",
+    "category": "Announcement"
   }
 ]
