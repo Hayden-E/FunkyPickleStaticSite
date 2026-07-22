@@ -2468,6 +2468,14 @@ body[b-pkws05qyn3] {
         margin-bottom: 1rem;
     }
 }
+
+.alert[b-hykvrqj8wd] {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+}
 /* /Components/Pages/NewsPage.razor.rz.scp.css */
 /* PAGE BACKGROUND */
 body[b-sk1c75zn0f] {
