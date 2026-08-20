@@ -1,11 +1,11 @@
 [
   {
-    "title": "Announcing Traffic Trouble",
+    "title": "Traffic Trouble v0.0.3a Release Notes",
     "filename": "article_0",
-    "titleslug": "announcing-traffic-trouble",
-    "shortbody": "Announcing our first game!",
+    "titleslug": "traffic-trouble-alpha-3-release",
+    "shortbody": "Bug fixes and improvements",
     "tags": [ "Traffic Trouble" ],
-    "publishdate": "2026-07-20",
-    "category": "Announcement"
+    "publishdate": "2026-08-20",
+    "category": "Release Notes"
   }
 ]

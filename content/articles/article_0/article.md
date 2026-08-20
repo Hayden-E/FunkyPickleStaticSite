@@ -1,21 +1,39 @@
-# Announcing Traffic Trouble
-*July 20, 2026*
+# v0.0.3a Release Notes
+*August 20, 2026*
 
 ---
 
-Today we're announcing our first official game, Traffic Trouble! Traffic Trouble is an action-packed crossy road inspired multiplayer game.
-Battle your way to victory as you move through a unique randomly generated world filled with obstacles. Move quick and use these
-obstacles to your advantage or face elimination!
+### A List of bug fixes and balance changes can be found below
 
 <br/>
 
-Traffic Trouble has been a dream of ours in the making since 2022. Due to complications with an early prototype's networking capabilities the project was unreleasable at the time.
-Luckily, in the years since the projects original conception there's been several advancements in networking capabilities and options for indie developers which have allowed
-us to finally release this labor of love.
+#### Additions
+
+- Added pushing, press 'F' to push players in front of you.
+
+#### Balance
+
+- Increased rock knockback from 25 -> 30
+- Removed in-air movement speed reduction
+- Adjusted the charge slider to prevent players from using it as a crosshair
+- Decreased the height of the water hitbox to prevent premature deaths
+
+#### Bug Fixes
+
+- Ground detection is now more consistent allowing jumps to feel more responsive
+- Other Player's nametags now appear when playing as a ghost
+- Rock no longer explode in the Player's hand
+- Debug items are no longer in the spawn area
+- Players no longer float when opening their settings menu
+- Fixed a bug where sensitivity was 5x higher as a ghost
+- The winner of the match is now synced properly
+
+#### Upcoming improvments
+
+- Tips that popup on your screen as you play instructing you what to do
 
 <br/>
-
-The project is still in early development but we're excited to be able to share 
-more as soon as its ready! Stay tuned for updates and playtesting opportunities as development continues.
-
-<img src = "content/articles/article_0/landscape_0.jpg">
+<a class="btn btn-primary"
+    href="/download/traffic-trouble">
+    Download The Update
+</a>

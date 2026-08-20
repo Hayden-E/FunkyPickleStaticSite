@@ -286,7 +286,8 @@
 /* ---------- HEADER ---------- */
 
 .site-header[b-bfy8lmo37o] {
-    position: sticky;
+    /*position: sticky;*/
+    overflow-anchor: none;
     top: 0;
     z-index: 1000;
     backdrop-filter: blur(16px);
@@ -1676,6 +1677,247 @@ body[b-igiexl92yw] {
     padding-top: 6rem;
     padding-bottom: 8rem;
 }
+/* /Components/Pages/DownloadHelp.razor.rz.scp.css */
+.download-help-page[b-qal4rdye89] {
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 0%, rgba(119, 171, 96, 0.12), transparent 40%), #0F1510;
+    color: #F4F6F2;
+    padding: 6rem 2rem 8rem;
+}
+
+/* =========================
+   TITLE
+   ========================= */
+
+.title[b-qal4rdye89] {
+    max-width: 900px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+    .title h1[b-qal4rdye89] {
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        font-weight: 800;
+        margin: 0 0 1rem;
+        letter-spacing: -1px;
+        color: #F4F6F2;
+    }
+
+        .title h1[b-qal4rdye89]::after {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 4px;
+            margin: 1.25rem auto 0;
+            border-radius: 999px;
+            background: #77AB60;
+        }
+
+    .title p[b-qal4rdye89] {
+        max-width: 650px;
+        margin: 1.5rem auto 0;
+        color: #C7D0C2;
+        font-size: 1.15rem;
+        line-height: 1.7;
+    }
+
+
+/* =========================
+   DOWNLOAD CARD
+   ========================= */
+
+.download-display[b-qal4rdye89] {
+    width: min(900px, 100%);
+    margin: 0 auto 5rem;
+    padding: 1.5rem;
+    background: linear-gradient( 145deg, #1A221A, #182018 );
+    border: 1px solid rgba(119, 171, 96, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35), 0 0 40px rgba(119, 171, 96, 0.05);
+
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/* =========================
+   INSTRUCTIONS
+   ========================= */
+
+.instruction-container[b-qal4rdye89] {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    position: relative;
+}
+
+
+    /* Connecting line between steps */
+
+    .instruction-container[b-qal4rdye89]::before {
+        content: "";
+        position: absolute;
+        top: 34px;
+        left: 16%;
+        right: 16%;
+        height: 2px;
+        background: linear-gradient( 90deg, transparent, rgba(119, 171, 96, 0.4), rgba(119, 171, 96, 0.4), transparent );
+        z-index: 0;
+    }
+
+
+/* =========================
+   INSTRUCTION CARD
+   ========================= */
+
+.instruction[b-qal4rdye89] {
+    position: relative;
+    z-index: 1;
+    background: #1A221A;
+    border: 1px solid rgba(119, 171, 96, 0.12);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+    .instruction:hover[b-qal4rdye89] {
+        transform: translateY(-8px);
+        border-color: rgba(119, 171, 96, 0.4);
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4), 0 10px 35px rgba(119, 171, 96, 0.12);
+    }
+
+
+    /* =========================
+   SCREENSHOT
+   ========================= */
+
+    .instruction img[b-qal4rdye89] {
+        display: block;
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        object-position: center;
+        border-bottom: 1px solid rgba(119, 171, 96, 0.1);
+        transition: transform 0.4s ease;
+    }
+
+    .instruction:hover img[b-qal4rdye89] {
+        transform: scale(1.025);
+    }
+
+
+    /* =========================
+   TEXT
+   ========================= */
+
+    .instruction p[b-qal4rdye89] {
+        margin: 0;
+        padding: 1.5rem;
+        color: #C7D0C2;
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+
+    /* =========================
+   STEP NUMBER
+   ========================= */
+
+    .instruction[b-qal4rdye89]::after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #77AB60;
+        color: white;
+        border-radius: 50%;
+        font-weight: 800;
+        font-size: 1rem;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+    }
+
+    .instruction:nth-child(1)[b-qal4rdye89]::after {
+        content: "1";
+    }
+
+    .instruction:nth-child(2)[b-qal4rdye89]::after {
+        content: "2";
+    }
+
+    .instruction:nth-child(3)[b-qal4rdye89]::after {
+        content: "3";
+    }
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .instruction-container[b-qal4rdye89] {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+    }
+
+        .instruction-container[b-qal4rdye89]::before {
+            display: none;
+        }
+
+    .instruction img[b-qal4rdye89] {
+        height: auto;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .download-help-page[b-qal4rdye89] {
+        padding: 4rem 1rem 5rem;
+    }
+
+    .title[b-qal4rdye89] {
+        margin-bottom: 2.5rem;
+    }
+
+        .title h1[b-qal4rdye89] {
+            font-size: 2.5rem;
+        }
+
+        .title p[b-qal4rdye89] {
+            font-size: 1rem;
+        }
+
+    .download-display[b-qal4rdye89] {
+        display: flex;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        border-radius: 16px;
+    }
+
+    .instruction[b-qal4rdye89] {
+        border-radius: 15px;
+    }
+
+        .instruction img[b-qal4rdye89] {
+            max-height: 300px;
+        }
+
+        .instruction p[b-qal4rdye89] {
+            padding: 1.25rem;
+            font-size: 0.95rem;
+        }
+}
 /* /Components/Pages/Games.razor.rz.scp.css */
 body[b-ygjp0udg9w] {
     background: #1A221A;
@@ -2185,6 +2427,94 @@ body[b-pkws05qyn3] {
         background: linear-gradient( to bottom, rgba(26, 34, 26, 0) 70%, rgba(26, 34, 26, 0.4) 85%, #243224 100% );
     }
 
+.news-card[b-pkws05qyn3] {
+    display: block;
+    text-decoration: none;
+    background: #1A221A;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.35);
+    transition: all .3s ease;
+    width: clamp(100px, 100%, 400px);
+}
+
+    .news-card:hover[b-pkws05qyn3] {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 18px 40px rgba(119,171,96,.35);
+    }
+
+.news-image[b-pkws05qyn3] {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+    .news-image span[b-pkws05qyn3] {
+        background: rgba(0,0,0,.6);
+        color: white;
+        padding: .4rem .8rem;
+        border-radius: 8px;
+        font-weight: 700;
+    }
+
+.tag-container[b-pkws05qyn3] {
+    margin: auto;
+    padding-inline-start: 1rem;
+    padding-top: 1rem;
+}
+
+    .tag-container span[b-pkws05qyn3] {
+        background: #0F1510;
+        color: white;
+        padding: .4rem 1rem;
+        border-radius: 8px;
+        font-weight: 700;
+        margin-right: 0.25rem;
+    }
+
+.news-content[b-pkws05qyn3] {
+    padding: 1.5rem;
+}
+
+.news-date[b-pkws05qyn3] {
+    color: #A7D38C;
+    font-weight: 600;
+    display: block;
+    margin-bottom: .75rem;
+}
+
+.news-content h3[b-pkws05qyn3] {
+    margin-bottom: .75rem;
+    color: #F4F6F2;
+}
+
+.news-content p[b-pkws05qyn3] {
+    color: #C7D0C2;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* BUTTON */
+
+.news-button[b-pkws05qyn3] {
+    display: inline-block;
+    padding: .7rem 1.2rem;
+    border-radius: 10px;
+    background: #77AB60;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s;
+}
+
+    .news-button:hover[b-pkws05qyn3] {
+        background: #669452;
+        transform: translateY(-2px);
+    }
+
 @keyframes float-b-pkws05qyn3 {
 
     0% {
@@ -2573,11 +2903,19 @@ body[b-sk1c75zn0f] {
     color: #d9f2dd;
 }
 
-.article-body img[b-sk1c75zn0f] {
-    border-radius: 20px;
+[b-sk1c75zn0f] .article-body img {
+    width: clamp(200px, 100%, 800px);
+    object-fit: cover;
+    object-position: center;
+    margin: 1.5rem auto 1.5rem;
+    display: flex;
+    border-radius: 22px;
+    box-shadow: 0 25px 60px rgba(0,0,0,.5);
+    transition: .4s;
 }
 
-[b-sk1c75zn0f] .article-body img {
+[b-sk1c75zn0f] .article-body iframe {
+    height: 560px;
     width: clamp(200px, 100%, 800px);
     object-fit: cover;
     object-position: center;
@@ -2686,4 +3024,52 @@ body[b-sk1c75zn0f] {
 [b-sk1c75zn0f] .btn-primary:hover {
     background: #669452;
     transform: scale(1.05);
+}
+
+/* Markdown Tables */
+[b-sk1c75zn0f] .article-body table {
+    /*width: 100%;*/
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 2rem 0;
+    background: #151d16;
+    border: 1px solid rgba(119, 171, 96, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 0.95rem;
+}
+
+/* Header */
+[b-sk1c75zn0f] .article-body thead {
+    background: #1f2b20;
+}
+
+[b-sk1c75zn0f] .article-body th {
+    padding: 14px 18px;
+    text-align: left;
+    font-weight: 700;
+    color: #77AB60;
+    border-bottom: 1px solid rgba(119, 171, 96, 0.25);
+}
+
+/* Cells */
+[b-sk1c75zn0f] .article-body td {
+    padding: 13px 18px;
+    color: #F4F6F2;
+    border-bottom: 1px solid rgba(119, 171, 96, 0.1);
+}
+
+/* Alternating rows */
+[b-sk1c75zn0f] .article-body tbody tr:nth-child(even) {
+    background: rgba(119, 171, 96, 0.04);
+}
+
+/* Hover */
+[b-sk1c75zn0f] .article-body tbody tr:hover {
+    background: rgba(119, 171, 96, 0.08);
+}
+
+/* Remove bottom border from final row */
+[b-sk1c75zn0f] .article-body tbody tr:last-child td {
+    border-bottom: none;
 }
